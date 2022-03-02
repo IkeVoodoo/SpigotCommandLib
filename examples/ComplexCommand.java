@@ -1,4 +1,4 @@
-@BaseCommand(name = "rank")
+@BaseCommand("rank")
 @AutoComplete
 public class ComplexCommand {
 
