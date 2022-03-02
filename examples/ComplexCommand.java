@@ -2,6 +2,8 @@
 @AutoComplete
 public class ComplexCommand {
 
+    // A path always starts with a / indicating root
+    // Example would be /a/b/c where you need to run /rank a b c to access it
     @SubCommand("/give")
     @Argument(name = "player", type = Player.class)
     @Argument(name = "rank", type = String.class)
