@@ -1,5 +1,5 @@
 # What is SCL?
-SCL Is a library for spigot or paper which simplifies the process of making commands, abstracting away all of the boilerplate code.
+SCL is a clean annotation-based command lib for spigot/paper, it simplifies the process of making commands, abstracting all the boilerplate!
 
 # What improvements does it bring?
 - Argument parsing (Automatically convert those pesky string arguments into objects!)
