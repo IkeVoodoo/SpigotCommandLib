@@ -1,4 +1,4 @@
-public class Example1 {
+public class SimpleCommand {
 
     @Command(name = "hello")
     @Argument(name = "player", type = Player.class)
