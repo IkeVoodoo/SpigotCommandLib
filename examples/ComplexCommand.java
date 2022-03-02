@@ -1,4 +1,5 @@
-@BaseCommand(name = "rank", autoCompletion = true)
+@BaseCommand(name = "rank")
+@AutoComplete
 public class ComplexCommand {
 
     @SubCommand(path = "/give")
