@@ -1,6 +1,6 @@
 public class SimpleCommand {
 
-    @Command(name = "hello")
+    @Command("hello")
     public void hello(CommandSender sender, @Argument("player") Player player) {
         player.sendMessage("Hello from " + sender.getName());
     }
