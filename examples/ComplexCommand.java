@@ -1,20 +1,35 @@
-@BaseCommand("rank")
+/**
+ * /rank
+ * /rank give <player> <rank>
+ * /rank take <player> <rank>
+ * /rank info
+ * /rank info list
+ * */
 @AutoComplete
-public class ComplexCommand {
-
-    // A path always starts with a / indicating root
-    // Example would be /a/b/c where you need to run /rank a b c to access it
-    @SubCommand("/give")
-    // The method here returns a string, however it can also return void, this is done to send a message to the sender
+@BaseCommand("rank")
+public class Testing2 {
+    
+    @SubCommand("give")
     private String give(@Argument("player") Player player, @Argument("rank") String rank) {
         // Do something...
         return "&aDone!";
     }
-
-    @SubCommand("/take")
+    
+    @SubCommand("take")
     private String take(@Argument("player") Player player, @Argument("rank") String rank) {
         // Do something...
         return "&aDone!";
     }
-
+    
+    @SubCommand("info")
+    private String info() {
+        // Do something...
+        return "&aDone!";
+    }
+    
+    @SubCommand(value = "list", previous = "info")
+    private String list() {
+        // Do something...
+        return "&aDone!";
+    }
 }
